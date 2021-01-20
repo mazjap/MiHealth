@@ -13,6 +13,12 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 5em;
+    font-weight: 900;
+    width: 20%;
+}
+
 h2 {
     font-size: 5vw;
     font-weight: 900;
@@ -26,13 +32,13 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    padding: 0 50px;
+    padding: 20px 50px;
 }
 
 nav > a {
     align-self: center;
-    padding-left: 5vw;
-    font-size: 1.35vw;
+    padding-left: 5%;
+    font-size: 1.5em;
 }
 
 .logo {
@@ -63,46 +69,49 @@ nav > a {
     background-image: url(src/double-bubble.png);
     display: flex;
     align-content: flex-end;
-    padding: 0 50px;
+    padding: 5%;
 }
 
 .categories .information {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: 2;
+    flex-grow: 2;
     padding-right: 10%;
 }
 
 .category {
     position: relative;
     padding-left: 10px;
-}
-
-.category img {
-    height: 400px;
-    width: 250px;
-    object-fit: cover;
-}
-
-.category .text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     text-align: right;
     align-items: flex-end;
     align-content: flex-end;
 }
 
-.text h2, .text h3 {
-    padding: 5px 10px;
-    text-transform: uppercase;
-    background-color: #fff;
-    font-size: 12px;
-    font-weight: bolder;
-    padding-left: 10px;
+.category img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
 }
 
-.text h3 {
+.text-container {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    text-align: end;
+}
+
+.text-container h3, .text-container h2 {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+.green h3 {
     background-color: lawngreen;
+    margin: 0;
 }
