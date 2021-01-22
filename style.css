@@ -14,14 +14,8 @@ a {
 }
 
 h1 {
-    font-size: 5em;
-    font-weight: 900;
-    width: 20%;
-}
-
-h2 {
     font-size: 5vw;
-    font-weight: 900;
+    width: 20%;
 }
 
 a:hover {
@@ -31,24 +25,16 @@ a:hover {
 nav {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
-    padding: 20px 50px;
+    padding: 10px 5%;
 }
 
 nav > a {
     align-self: center;
     padding-left: 5%;
-    font-size: 1.5em;
+    font-size: 1.25vw;
 }
 
 .logo {
-    /* No selection */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-
-    align-self: center;
     flex-grow: 1;
     font-size: 2.2vw;
 }
@@ -58,7 +44,7 @@ nav > a {
     text-transform: uppercase;
     display: inline;
     color: lawngreen;
-    font-size: 50px;
+    font-size: 4.5vw;
 }
 
 .logo h6:nth-child(odd) {
@@ -76,30 +62,29 @@ nav > a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 2;
     padding-right: 10%;
 }
 
 .category {
     position: relative;
-    padding-left: 10px;
+    padding-left: 1%;
     text-align: right;
     align-items: flex-end;
     align-content: flex-end;
+    width: 80%;
 }
 
 .category img {
-    width: 350px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .text-container {
     position: absolute;
-    text-align: center;
     right: 0;
     bottom: 0;
-    width: 50%;
+    width: 45%;
     text-align: end;
 }
 
@@ -108,10 +93,17 @@ nav > a {
     font-weight: bolder;
     background-color: #fff;
     padding: 10px;
-    margin-left: 30%;
+    display: inline-block;
 }
 
 .green h3 {
     background-color: lawngreen;
-    margin: 0;
+    display: block;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */   
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
